@@ -9,12 +9,6 @@
 
  ;;'(custom-theme-load-path "~/.emacs.d/themes")
 
- ;; no welcome screen
- '(inhibit-startup-screen t)
- ;; start in full screen
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
-(custom-set-faces
-
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
@@ -26,10 +20,19 @@
  ;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
  ;;(load-theme 'solarized t)
 
+ ;; no welcome screen
+(setq inhibit-startup-message t)
+
+ ;; Disable toolbar
+(tool-bar-mode -1)
+
  ;; Set theme
 (load-theme 'misterioso)
 
- ;;Prolog
+;; Init maximized
+(toggle-frame-maximized)
+
+ ;; Prolog
 (autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
 (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
 (autoload 'mercury-mode "prolog" "Major mode for editing Mercury programs." t)
