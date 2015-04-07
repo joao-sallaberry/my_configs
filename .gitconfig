@@ -1,0 +1,5 @@
+[user]
+	email = joaovictorhs@gmail.com
+	name = Joao Sallaberry
+[alias]
+	tracked = ls-tree -r master --name-only
