@@ -3,3 +3,5 @@
 	name = Joao Sallaberry
 [alias]
 	tracked = ls-tree -r master --name-only
+[core]
+	editor = emacs -nw
