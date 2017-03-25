@@ -2,6 +2,8 @@
 	email = joaovictorhs@gmail.com
 	name = Joao Sallaberry
 [alias]
+	co = checkout
+	st = status
 	tracked = ls-tree -r master --name-only
 [core]
 	editor = emacs -nw
